@@ -1,0 +1,35 @@
+@use 'sass:math';
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap');
+
+//functions
+@function createStars($n) {
+  // n - number of stars
+  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+  }
+
+  @return unquote($value);
+}
+
+@function pxToRem($px) {
+  @return math.div($px, 16px) * 1rem;
+}
+
+//variables
+
+$font: 'Nunito Sans', sans-serif;
+
+$stars-small: createStars(700);
+$stars-medium: createStars(200);
+$stars-big: createStars(100);
+
+//colors
+$veryDark: #090d0f;
+$dark: #1b2735;
+$lightBlue: #e9efff;
+$blue: #b5c9fe;
+
+//breakpoints
+$tablet: pxToRem(768px);
+$desktop: pxToRem(1440px);

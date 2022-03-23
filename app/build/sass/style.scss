@@ -1,0 +1,8 @@
+@forward './resets';
+@forward './global';
+@forward './components/footer/footer';
+@forward './components/header/header';
+@forward './components/main/main';
+body {
+  overflow: hidden;
+}

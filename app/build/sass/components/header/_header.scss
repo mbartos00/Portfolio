@@ -1,0 +1,233 @@
+@use '../../variables' as *;
+
+.header {
+  max-width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(
+    ellipse at bottom,
+    $dark 10%,
+    $veryDark 90%
+  );
+
+  &__star1 {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $stars-small;
+    &::after {
+      content: ' ';
+      position: absolute;
+      top: 2000px;
+      width: 1px;
+      height: 1px;
+      background: transparent;
+      box-shadow: $stars-small;
+    }
+  }
+  &__star2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $stars-medium;
+    &::after {
+      content: ' ';
+      position: absolute;
+      top: 2000px;
+      width: 2px;
+      height: 2px;
+      background: transparent;
+      box-shadow: $stars-medium;
+    }
+  }
+  &__star3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $stars-big;
+    &::after {
+      content: ' ';
+      position: absolute;
+      top: 2000px;
+      width: 3px;
+      height: 4px;
+      background: transparent;
+      box-shadow: $stars-big;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: pxToRem(30px);
+    @media screen and (min-width: $tablet) {
+      padding-inline: pxToRem(75px);
+      justify-content: flex-end;
+      gap: 5rem;
+    }
+    &--langBtn {
+      position: relative;
+      width: pxToRem(60px);
+      height: pxToRem(29px);
+      overflow: hidden;
+      font-weight: 600;
+      border-radius: 100vh;
+      -webkit-tap-highlight-color: transparent;
+      &-checkbox {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 3;
+        &:checked + .header__nav--langBtn-knobs::before {
+          content: 'PL';
+          left: 33px;
+        }
+      }
+      &-layer {
+        width: 100%;
+        background-color: $lightBlue;
+        z-index: 1;
+        display: flex;
+        gap: 1.2rem;
+        align-items: center;
+        padding-inline: 5px;
+        position: absolute;
+        inset: 0;
+        transition: 0.3s ease all;
+        span {
+          font-size: pxToRem(12px);
+          color: $dark;
+          opacity: 0.6;
+          font-weight: 600;
+        }
+      }
+      &-knobs {
+        position: absolute;
+        inset: 0;
+        z-index: 2;
+        &::before {
+          content: 'EN';
+          position: absolute;
+          top: 3px;
+          left: 4px;
+          width: 23px;
+          aspect-ratio: 1;
+          color: #fff;
+          font-size: 11px;
+          text-align: center;
+          line-height: 1;
+          padding: 6px 0;
+          background-color: $dark;
+          border-radius: 100vh;
+          transition: 0.3s ease all,
+            left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15);
+        }
+      }
+    }
+    &--cvBtn {
+      font-size: 1.125rem;
+      @media screen and (min-width: $tablet) {
+        font-size: pxToRem(22px);
+      }
+      @media screen and (min-width: $desktop) {
+        font-size: pxToRem(30px);
+      }
+      a {
+        color: #fff;
+        position: relative;
+        padding: 4px 10px 6px 12px;
+
+        &::before {
+          transform: translateX(-30%);
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 90%;
+          height: 2px;
+          border-bottom: 2px solid $blue;
+          @media screen and (min-width: $tablet) {
+            width: 100%;
+          }
+          @media screen and (min-width: $desktop) {
+            width: 120%;
+            transform: translateX(-50%);
+          }
+        }
+
+        &::after {
+          transform: translateX(-50%);
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          border-right: 2px solid transparent;
+          border-top: 2px solid transparent;
+        }
+
+        &:hover {
+          &:before {
+            transition: 0.1s transform linear;
+            transform: translateX(15%);
+            @media screen and (min-width: $desktop) {
+              transform: translateX(0);
+            }
+          }
+          &:after {
+            transition: 0.1s height linear 0.3s, 0.1s transform linear 0.2s;
+            transform: translateX(20%);
+            height: 100%;
+            border-color: $blue;
+          }
+        }
+      }
+    }
+  }
+
+  &__hero {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: pxToRem(45px);
+
+    @media screen and (min-width: $tablet) {
+      padding-inline: pxToRem(100px);
+    }
+    @media screen and (min-width: $desktop) {
+      height: 70%;
+    }
+    &--text {
+      width: 100vw;
+      @media screen and (min-width: $tablet) {
+        width: 60vw;
+      }
+      @media screen and (min-width: $desktop) {
+        width: 40vw;
+      }
+    }
+  }
+  &__arrow {
+    width: 100%;
+    transform: translateY(200%);
+    @media screen and (min-width: $tablet) {
+      transform: translateY(130%);
+    }
+    img {
+      width: pxToRem(40px);
+      height: pxToRem(45px);
+      margin: 0 auto;
+      cursor: pointer;
+
+      @media screen and (min-width: $tablet) {
+        width: pxToRem(50px);
+        height: pxToRem(60px);
+      }
+    }
+  }
+}

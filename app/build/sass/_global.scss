@@ -1,0 +1,29 @@
+@use './variables' as *;
+
+html {
+  font-family: $font;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: pxToRem(25px);
+  color: $dark;
+  @media screen and(min-width:$tablet) {
+    font-size: pxToRem(40px);
+  }
+  @media screen and(min-width:$desktop) {
+    font-size: pxToRem(50px);
+  }
+}
+
+h2 {
+  font-weight: 600;
+  font-size: pxToRem(18px);
+  color: $dark;
+  @media screen and(min-width:$tablet) {
+    font-size: pxToRem(20px);
+  }
+  @media screen and(min-width:$desktop) {
+    font-size: pxToRem(25px);
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "pl": {
+    "about": "Pozwól, że się przedstawię. Mam na imię Maciek, mam 22 lata i jestem front end developerem - samoukiem. Mieszkam na wsi znajdującej się około 50km od Krakowa oraz obecnie jestem studentem drugiego roku informatyki stosowanej na WSEI w tym mieście. Na codzień poszerzam swoją wiedzę jako front end. W wolnym czasie dbam o swoje 30 ptaszników, lubię pograć na pianinie oraz spotkać się ze znajomymi. Aktualnie szukam pracy jako młodszy programista.",
+    "projects": [
+      {
+        "title": "Space Tourism",
+        "description": "Najnowszy projekt w moim repozytorium zbudowany na potrzeby wyzwania ze strony Frontend Mentor które wzbogaciłem o kilka dodatków. Tym razem nauczyłem się destrukturyzacji wprowadzonej w wersji ES6, podstaw biblioteki Three.js, GSAP i do pracy z modułami zawartymi w ECMAScript 2015 użyłem Parcel'a"
+      },
+      {
+        "title": "Aplikacja pogodowa",
+        "description": "Aplikacja jest rozwiązaniem wywzwania z strony Devchallenges.io. Tak jak w poprzednich projektach celem było spełnienie wymagań użytkowników, które można znaleźć na moim githubie. Tym razem poza HTML, JavaScriptem oraz Sass'em nauczyłem się oraz użyłem biblioteki Axios oraz narzędzia NPM."
+      },
+      {
+        "title": "Rest Countries Api",
+        "description": "Strona jest rozwiązaniem zadania z strony Frontend Mentor. Celem było spełnienie wymagań użytkownika. Projekt został zbudowany przy użyciu technologi takich jak HTML, Sass, JS. W tym wyzwaniu nauczyłem się korzystania z Fetch Api, pracy z REST API po stronie frontend'u oraz oraz używania danych w formacie JSON. Co więcej podjąłem pierwsze kroki w nauce funkcji asynchronicznych."
+      },
+      {
+        "title": "Blogr",
+        "description": "Prosty projekt zbudowany w HTML'u, podstawowym JavaScript oraz Sass. Założeniem strony było zbudować stronę jak najbardziej zbliżoną do projektu. Strona jest w pełni responsywna oraz zoptymalizowana pod dostępne przeglądarki."
+      }
+    ]
+  },
+  "en": {
+    "about": "Let me introduce myself. My name is Maciek, I'm 22 years old and I'm a self-taught front-end developer. I live in village located about 50km from Cracow and currently I'm on a second year of computer science studies on WSEI based in this town. On daily basis I keep developing my skills as a front end. In free time I taking care about my 30 tarantulas, I like to play some music on piano and hang out with my friends. Presently I'm looking for job as junior developer.",
+    "projects": [
+      {
+        "title": "Space Tourism",
+        "description": "The latest project in my repository built for Frontend Mentor challenge which I improved. This time I've learned ES6 destructuring, basics of Three.js, GSAP and to work with ES6 modules i used Parcel."
+      },
+      {
+        "title": "Weather app",
+        "description": "App built to complete a challenge from Devchallenges.io. Like in previous project goal was to realize user stories that you can find on my github. This time besides HTML, JS and Sass I have learned and used Axios and NPM."
+      },
+      {
+        "title": "Rest Countries Api",
+        "description": "Project is a solution for Frontend Mentor challenge. The goal was to complete given user stories. It was made with HTML, Sass and JS. In this project I have learned how to use Fetch Api and work with REST AP on frontend side as well as JSON data. What is more i took my first steps into async functions."
+      },
+      {
+        "title": "Blogr",
+        "description": "It is a simple project built with HTML, basic JavaScript and Sass. The goal was to build page looking as close to design as possible. Website is fully responsive and optimised for multiple browsers"
+      }
+    ]
+  }
+}

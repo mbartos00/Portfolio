@@ -1,0 +1,21 @@
+{
+  "source": "app/build/html/index.html",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel --no-cache --no-source-maps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@splidejs/splide": "^3.6.12",
+    "gsap": "^3.9.1",
+    "parcel": "^2.3.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.2",
+    "sass": "^1.49.9"
+  }
+}
