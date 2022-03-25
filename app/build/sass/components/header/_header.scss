@@ -8,51 +8,26 @@
     $dark 10%,
     $veryDark 90%
   );
-
+  @media (orientation: landscape) {
+    padding-bottom: 10rem;
+  }
   &__star1 {
     width: 1px;
     height: 1px;
     background: transparent;
-    box-shadow: $stars-small;
-    &::after {
-      content: ' ';
-      position: absolute;
-      top: 2000px;
-      width: 1px;
-      height: 1px;
-      background: transparent;
-      box-shadow: $stars-small;
-    }
+    box-shadow: $stars-small, $stars-small;
   }
   &__star2 {
     width: 2px;
     height: 2px;
     background: transparent;
-    box-shadow: $stars-medium;
-    &::after {
-      content: ' ';
-      position: absolute;
-      top: 2000px;
-      width: 2px;
-      height: 2px;
-      background: transparent;
-      box-shadow: $stars-medium;
-    }
+    box-shadow: $stars-medium, $stars-medium;
   }
   &__star3 {
     width: 3px;
     height: 3px;
     background: transparent;
-    box-shadow: $stars-big;
-    &::after {
-      content: ' ';
-      position: absolute;
-      top: 2000px;
-      width: 3px;
-      height: 4px;
-      background: transparent;
-      box-shadow: $stars-big;
-    }
+    box-shadow: $stars-big, $stars-big;
   }
 
   &__nav {
@@ -195,7 +170,6 @@
     justify-content: center;
     align-items: center;
     padding: pxToRem(45px);
-
     @media screen and (min-width: $tablet) {
       padding-inline: pxToRem(100px);
     }
@@ -217,6 +191,9 @@
     transform: translateY(200%);
     @media screen and (min-width: $tablet) {
       transform: translateY(130%);
+    }
+    @media (orientation: landscape) {
+      transform: translateY(80%);
     }
     img {
       width: pxToRem(40px);
