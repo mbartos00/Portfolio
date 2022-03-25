@@ -1,0 +1,7 @@
+@forward './introduce';
+@forward './skills';
+@use '../../../variables' as *;
+.main__about {
+  background-color: $lightBlue;
+  width: 100%;
+}

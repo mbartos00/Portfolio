@@ -1,0 +1,74 @@
+@use '../../../variables' as *;
+
+.main__about--introduce {
+  padding-top: pxToRem(30px);
+  position: relative;
+  margin-bottom: pxToRem(30px);
+
+  @media screen and (min-width: $tablet) {
+    padding-top: pxToRem(37px);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid $veryDark;
+    opacity: 0.5;
+  }
+  &-title {
+    text-align: center;
+    margin-bottom: pxToRem(45px);
+    @media screen and(min-width:$tablet) {
+      text-align: left;
+      margin-left: pxToRem(70px);
+    }
+    @media screen and(min-width:$desktop) {
+      margin-left: pxToRem(90px);
+    }
+  }
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media screen and(min-width:$tablet) {
+      flex-direction: row;
+      padding-inline: pxToRem(70px);
+      gap: pxToRem(80px);
+    }
+    @media screen and(min-width:$desktop) {
+      padding-inline: pxToRem(90px);
+      gap: pxToRem(300px);
+    }
+    .bitmoji {
+      width: pxToRem(120px);
+      margin-bottom: pxToRem(60px);
+      @media screen and(min-width:$tablet) {
+        margin-left: pxToRem(50px);
+      }
+      @media screen and(min-width:$desktop) {
+        margin-left: pxToRem(110px);
+      }
+    }
+    .description {
+      text-align: center;
+      padding-inline: 2rem;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: pxToRem(46px);
+      @media screen and(min-width:$tablet) {
+        text-align: left;
+        padding: 0;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+      @media screen and(min-width:$desktop) {
+        max-width: 50ch;
+        text-align: left;
+        font-size: pxToRem(20px);
+      }
+    }
+  }
+}

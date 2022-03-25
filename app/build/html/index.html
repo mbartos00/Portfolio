@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../sass/style.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/combine/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css,npm/@splidejs/splide@3.6.12/dist/css/splide-core.min.css"
+    />
     <title>Maciej Bartos</title>
   </head>
   <body>
@@ -259,6 +263,59 @@
         <img src="../images/heroArrow.svg" alt="arrow" />
       </div>
     </header>
+    <main class="main">
+      <div class="main__about">
+        <section class="main__about--introduce">
+          <h1 class="main__about--introduce-title">About me</h1>
+          <div class="main__about--introduce-content">
+            <img src="../images/bitmoji.svg" alt="bitmoji" class="bitmoji" />
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              volutpat enim a quam auctor pharetra. Quisque est neque, tempus
+              non facilisis id, ultrices non lorem. Integer ligula nisi,
+              pharetra imperdiet diam eget, dictum ultricies nisi. Aliquam ac
+              dolor sed augue blandit volutpat at dictum neque. Quisque at dolor
+              et elit ornare pulvinar ut sed augue.
+            </p>
+          </div>
+        </section>
+        <section class="main__about--skils">
+          <h1 class="main__about--skils-title">Skills and dev tools</h1>
+          <div class="langs">
+            <img src="../images/html-ico.svg" alt="htmlIco" />
+            <img src="../images/css-ico.svg" alt="cssIco" />
+            <img src="../images/sass-ico.svg" alt="sassIco" />
+            <img src="../images/js-ico.svg" alt="jsIco" />
+          </div>
+          <div class="tools">
+            <div class="splide">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="../images/vscode-ico.svg" alt="vscode-ico" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="../images/npm-ico.svg" alt="npm-ico" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="../images/parcel-ico.svg" alt="parcel-ico" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="../images/figma-ico.svg" alt="figma-ico" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="../images/github-ico.svg" alt="github-ico" />
+                  </li>
+                  <li class="splide__slide">
+                    <img src="../images/git-ico.svg" alt="git-ico" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <script type="module" src="../js/index.js"></script>
   </body>
 </html>
