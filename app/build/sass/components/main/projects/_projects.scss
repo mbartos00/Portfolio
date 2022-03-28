@@ -1,0 +1,184 @@
+@use '../../../variables' as *;
+
+.main__projects {
+  width: 100%;
+  padding-inline: pxToRem(38px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: pxToRem(50px);
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: pxToRem(50px);
+  @media screen and (min-width: $tablet) {
+    padding-inline: pxToRem(110px);
+    padding-bottom: pxToRem(80px);
+    gap: pxToRem(75px);
+  }
+  @media screen and (min-width: $desktop) {
+    padding-inline: pxToRem(300px);
+    gap: pxToRem(100px);
+  }
+  &--title {
+    margin-block: pxToRem(30px) pxToRem(35px);
+    text-align: center;
+  }
+  &--card {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 7px 17px 1px #1b27355b;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $tablet) {
+      &:nth-child(even) {
+        transform: translateX(-3rem);
+        flex-direction: row;
+      }
+      &:nth-child(odd) {
+        transform: translateX(3rem);
+        flex-direction: row-reverse;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      &:nth-child(even) {
+        transform: translateX(-10rem);
+        flex-direction: row;
+      }
+      &:nth-child(odd) {
+        transform: translateX(10rem);
+        flex-direction: row-reverse;
+      }
+    }
+    &:nth-child(even)::before {
+      position: absolute;
+      content: '01';
+      font-weight: 900;
+      font-size: pxToRem(50px);
+      color: #f0f4ff;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+      top: -0.5rem;
+      left: -1.8rem;
+      z-index: 2;
+    }
+    &:nth-child(odd)::before {
+      position: absolute;
+      content: '02';
+      z-index: 2;
+      font-weight: 900;
+      font-size: pxToRem(50px);
+      color: #f0f4ff;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+      top: -0.5rem;
+      right: -1.8rem;
+    }
+    &:nth-child(even) > &-image > .hover {
+      transform: translateX(92%);
+    }
+    &:nth-child(odd) > &-image > .hover {
+      transform: translateX(-92%);
+    }
+    &-image {
+      width: 100%;
+      background-color: rebeccapurple;
+      min-height: pxToRem(170px);
+      overflow: hidden;
+      position: relative;
+      img {
+        width: 100%;
+        min-height: inherit;
+      }
+      @media screen and (min-width: $tablet) {
+        min-height: pxToRem(200px);
+      }
+      @media screen and (min-width: $desktop) {
+        min-height: pxToRem(300px);
+      }
+      &:hover > .hover {
+        transform: translateX(0) !important;
+        span {
+          display: none;
+        }
+      }
+      &:active > .hover {
+        transform: translateX(0) !important;
+      }
+      .hover {
+        width: 100%;
+        background-color: #1b2735ee;
+        top: 0;
+        position: absolute;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 5rem;
+
+        &--arrow {
+          color: $lightBlue;
+          position: absolute;
+          left: 0.7vw;
+          font-weight: 600;
+        }
+        a {
+          width: 4rem;
+          aspect-ratio: 1;
+          position: relative;
+
+          &:first-of-type:after {
+            content: 'Github';
+            position: absolute;
+            width: 100%;
+            bottom: -2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2rem;
+            color: $lightBlue;
+            cursor: pointer;
+            opacity: 0.6;
+          }
+          &:nth-of-type(2):after {
+            content: 'Live';
+            position: absolute;
+            width: 100%;
+            bottom: -2rem;
+            left: 50%;
+            transform: translateX(-28%);
+            font-size: 1.2rem;
+            color: $lightBlue;
+            cursor: pointer;
+            opacity: 0.6;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    &-content {
+      width: 100%;
+      padding: pxToRem(10px) pxToRem(20px);
+      @media screen and (min-width: $desktop) {
+        margin-left: pxToRem(55px);
+        padding: pxToRem(20px) pxToRem(20px);
+      }
+      .title {
+        margin-bottom: pxToRem(15px);
+      }
+      .description {
+        font-size: pxToRem(12px);
+        font-weight: 400;
+        text-align: left;
+        @media screen and (min-width: $desktop) {
+          font-size: 0.9rem;
+          margin-block: auto;
+          max-width: 40ch;
+        }
+      }
+    }
+  }
+}
