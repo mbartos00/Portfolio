@@ -1,0 +1,153 @@
+@use '../../variables' as *;
+
+.footer {
+  width: 100%;
+  background-color: $dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  padding-inline: pxToRem(70px);
+  padding-bottom: pxToRem(60px);
+  @media screen and (min-width: $desktop) {
+    padding-inline: pxToRem(90px);
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: 0rem;
+    left: 0;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, #fff 5%, $dark 70%);
+    width: 100%;
+    height: 0.7rem;
+  }
+  &--title {
+    color: $lightBlue;
+    margin-top: pxToRem(30px);
+    @media screen and (min-width: $tablet) {
+      align-self: flex-start;
+      margin-top: pxToRem(37px);
+    }
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media screen and(min-width:$tablet) {
+      width: 40vw;
+    }
+    @media screen and(min-width:$desktop) {
+      width: 30vw;
+    }
+    input,
+    textarea {
+      width: 100%;
+      background-color: rgba(240, 244, 255, 0.04);
+      color: $lightBlue;
+      border: 1px solid #e3e7f226;
+      border-radius: 10px;
+      margin-block: pxToRem(20px);
+      resize: none;
+      caret-color: $blue;
+      &:focus {
+        outline-color: $blue;
+      }
+      &::placeholder {
+        font-size: pxToRem(18px);
+        color: #ffffff4d;
+        letter-spacing: 1.5px;
+      }
+    }
+    &--name,
+    &--email {
+      padding: 0.5rem;
+    }
+    &--text {
+      padding: 0.5rem 0.5rem 5rem 0.5rem;
+      @media screen and(min-width:$tablet) {
+        padding: 0.5rem 0.5rem 8rem 0.5rem;
+      }
+    }
+    &--button {
+      margin-top: pxToRem(20px);
+      background: none;
+      border: none;
+      font-weight: 600;
+      font-size: pxToRem(20px);
+      color: #ffffff99;
+      letter-spacing: 1.5px;
+      position: relative;
+      padding-block: 7px;
+      @media screen and(min-width:$tablet) {
+        font-size: pxToRem(25px);
+      }
+      @media screen and(min-width:$desktop) {
+        font-size: pxToRem(30px);
+      }
+      &::before {
+        transform: translateX(-30%);
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 70%;
+        height: 2px;
+        border-bottom: 2.5px solid $blue;
+      }
+
+      &::after {
+        transform: translateX(-50%);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 2px;
+        border-right: 2px solid transparent;
+        border-top: 2px solid transparent;
+      }
+
+      &:hover,
+      &:focus {
+        outline: none;
+        &:before {
+          transition: 0.1s transform linear;
+          transform: translateX(37%);
+          width: 80%;
+        }
+        &:after {
+          transition: 0.1s height linear 0.3s, 0.1s transform linear 0.2s;
+          transform: translateX(120%);
+          height: 100%;
+          border-color: $blue;
+        }
+      }
+    }
+  }
+  &--arrow {
+    position: absolute;
+    padding: 10px;
+    border-radius: 100vh;
+    border: 3px solid transparent;
+    transform: rotate(40deg);
+    border-top-color: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    &-image {
+      width: 100%;
+      aspect-ratio: 1;
+      transform: rotate(-40deg) scale(1.3);
+    }
+  }
+}
