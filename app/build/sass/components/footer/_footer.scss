@@ -84,6 +84,7 @@
       letter-spacing: 1.5px;
       position: relative;
       padding-block: 7px;
+      cursor: pointer;
       @media screen and(min-width:$tablet) {
         font-size: pxToRem(25px);
       }

@@ -3,7 +3,16 @@
 html {
   font-family: $font;
 }
-
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: $dark;
+}
+::-webkit-scrollbar-thumb {
+  background: $lightBlue;
+  border-radius: 100vh;
+}
 h1 {
   font-weight: 700;
   font-size: pxToRem(25px);

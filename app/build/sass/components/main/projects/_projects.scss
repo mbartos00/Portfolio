@@ -52,7 +52,7 @@
     }
     &:nth-child(even)::before {
       position: absolute;
-      content: '01';
+      content: attr(data);
       font-weight: 900;
       font-size: pxToRem(50px);
       color: #f0f4ff;
@@ -63,7 +63,7 @@
     }
     &:nth-child(odd)::before {
       position: absolute;
-      content: '02';
+      content: attr(data);
       z-index: 2;
       font-weight: 900;
       font-size: pxToRem(50px);
@@ -74,9 +74,16 @@
     }
     &:nth-child(even) > &-image > .hover {
       transform: translateX(92%);
+      span {
+        left: 0.7vw;
+      }
     }
     &:nth-child(odd) > &-image > .hover {
       transform: translateX(-92%);
+      span {
+        right: 0.7vw;
+        transform: rotate(180deg);
+      }
     }
     &-image {
       width: 100%;
@@ -119,7 +126,6 @@
         &--arrow {
           color: $lightBlue;
           position: absolute;
-          left: 0.7vw;
           font-weight: 600;
         }
         a {
