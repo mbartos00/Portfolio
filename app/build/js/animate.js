@@ -140,7 +140,7 @@ export const animateHandWriteEN = () => {
           strokeDashoffset: 0,
         }
       );
-    }, 400 * index);
+    }, 500 * index);
   });
 };
 export const animateHandWritePL = () => {
@@ -159,10 +159,10 @@ export const animateHandWritePL = () => {
         },
         {
           opacity: 1,
-          duration: 0.5,
+          duration: 0.7,
           strokeDashoffset: 0,
         }
       );
-    }, 400 * index);
+    }, 600 * index);
   });
 };
