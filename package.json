@@ -12,6 +12,7 @@
   "dependencies": {
     "@splidejs/splide": "^3.6.12",
     "gsap": "^3.9.1",
+    "html2pdf.js": "^0.10.1",
     "parcel": "^2.3.2"
   },
   "devDependencies": {
