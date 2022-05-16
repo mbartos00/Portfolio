@@ -35,11 +35,45 @@
         "description": "App built to complete a challenge from Devchallenges.io. Like in previous project goal was to realize user stories that you can find on my github. This time besides HTML, JS and Sass I have learned and used Axios and NPM."
       },
       {
-        "description": "Project is a solution for Frontend Mentor challenge. The goal was to complete given user stories. It was made with HTML, Sass and JS. In this project I have learned how to use Fetch Api and work with REST AP on frontend side as well as JSON data. What is more i took my first steps into async functions."
+        "description": "Project is a solution for Frontend Mentor challenge. The goal was to complete given user stories. It was made with HTML, Sass and JS. In this project I have learned how to use Fetch Api and work with REST API on frontend side as well as JSON data. What is more i took my first steps into async functions."
       },
       {
         "description": "It is a simple project built with HTML, basic JavaScript and Sass. The goal was to build page looking as close to design as possible. Website is fully responsive and optimised for multiple browsers"
       }
     ]
+  },
+  "cv": {
+    "titles": {
+      "en": [
+        "Contact",
+        "Education",
+        "Languages",
+        "Profile",
+        "Experience",
+        "Skills",
+        "Tools",
+        "Cerfiticates",
+        "Interests"
+      ],
+      "pl": [
+        "Kontakt",
+        "Wykształcenie",
+        "Języki",
+        "Profil",
+        "Doświadczenie",
+        "Umiejętności",
+        "Narzędzia",
+        "Certyfikaty",
+        "Zainteresowania"
+      ]
+    },
+    "interests": {
+      "en": ["Terraristics", "Music", "Cars", "Gaming"],
+      "pl": ["Terrarystyka", "Muzyka", "Samochody", "Gry komputerowe"]
+    },
+    "profile": {
+      "en": "Computer science student and a self-taught front-end developer focusing on developing skills as a programmer. Seeking for opportunities that will allow me to expand my skill set in web development.",
+      "pl": "Student informatyki stosowanej oraz samokształcący się front-end developer skupiający się na rozwijaniu umiejętności jako programista. Szukam możliwości które pozwolą mi rozwinąć moje umiejętności w zakresie tworzenia aplikacji internetowych"
+    }
   }
 }
