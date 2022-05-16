@@ -106,6 +106,7 @@ export const animateProjects = () => {
 };
 
 const animateHoverArrow = () => {
+  hoverArrow % 2 == 0 ? (hoverArrow.style.transform = 'rotate(180deg)') : '';
   gsap.timeline().from(hoverArrow, {
     xPercent: -20,
     duration: 0.5,

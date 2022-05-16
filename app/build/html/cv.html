@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../sass/cv.scss" />
+    <link rel="shortcut icon" href="../images/faviconCv.png" type="image/png" />
+    <title>CV</title>
+  </head>
+  <body id="cv">
+    <main class="main">
+      <aside class="main__aside">
+        <div class="main__aside--lang">
+          <div class="main__aside--lang-btn">
+            <input type="checkbox" class="main__aside--lang-btn-checkbox" />
+            <div class="main__aside--lang-btn-knobs"></div>
+            <div class="main__aside--lang-btn-layer">
+              <span>EN</span>
+              <span>PL</span>
+            </div>
+          </div>
+        </div>
+        <div class="main__aside--download">
+          <button class="main__aside--download-btn">
+            <i class="fa-solid fa-download"></i>
+            <span>Download CV</span>
+          </button>
+        </div>
+        <section class="main__aside--profile">
+          <div class="main__aside--profile-image">
+            <img
+              src="../images/myPhoto.jpg"
+              alt="profile picture"
+              class="image"
+            />
+          </div>
+          <h2 class="main__aside--profile-name">
+            Maciej Bartos<br /><span>Front End Developer</span>
+          </h2>
+        </section>
+        <section class="main__aside--contact">
+          <h3 class="main__aside--contact-title">Contact</h3>
+          <ul class="main__aside--contact-list">
+            <li class="list__item">
+              <span class="list__item--icon"
+                ><i class="fa-solid fa-phone" aria-hidden="true"></i
+              ></span>
+              <span class="list__item--text">+48 609 281 633</span>
+            </li>
+            <li class="list__item">
+              <span class="list__item--icon"
+                ><i class="fa-solid fa-envelope" aria-hidden="true"></i
+              ></span>
+              <span class="list__item--text">maciekbartos8@gmail.com</span>
+            </li>
+            <li class="list__item">
+              <span class="list__item--icon"
+                ><i class="fa-solid fa-globe" aria-hidden="true"></i
+              ></span>
+              <span class="list__item--text">maciejbartos.netlify.app</span>
+            </li>
+            <li class="list__item">
+              <span class="list__item--icon"
+                ><i class="fa-solid fa-location-dot" aria-hidden="true"></i
+              ></span>
+              <span class="list__item--text"
+                >Dobiesławice, Świętokrzyskie, Poland</span
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="main__aside--education">
+          <h3 class="main__aside--education-title">Education</h3>
+          <ul class="main__aside--education-list">
+            <li class="list__item">
+              <h5 class="list__item--title">2020-2024</h5>
+              <p id="BE" class="list__item--paragraph">
+                Bachelor of Engineering
+              </p>
+              <p class="list__item--paragraph">
+                Wyższa Szkoła Ekonomii i Informatyki w Krakowie
+              </p>
+            </li>
+            <li class="list__item">
+              <h5 class="list__item--title">2016-2020</h5>
+              <p id="IS" class="list__item--paragraph">IT specialist</p>
+              <p class="list__item--paragraph">
+                Zespół Szkół Rolniczych w Cudzynowicach
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="main__aside--languages">
+          <h3 class="main__aside--languages-title">Languages</h3>
+          <ul class="main__aside--languages-list">
+            <li class="list__item">
+              <h5 class="list__item--title">
+                <span id="En">English</span><span>(B2)</span>
+              </h5>
+              <span class="list__item--percent">
+                <div style="width: 60%"></div>
+              </span>
+            </li>
+            <li class="list__item">
+              <h5 class="list__item--title">
+                <span id="Pl">Polish</span><span>(Native)</span>
+              </h5>
+              <span class="list__item--percent">
+                <div style="width: 100%"></div>
+              </span>
+            </li>
+          </ul>
+        </section>
+      </aside>
+      <div class="main__div">
+        <section class="main__div--section">
+          <h2 class="main__div--section-title">Profile</h2>
+          <p class="main__div--section-paragraph">
+            Computer science student and a self-taught front-end developer
+            focusing on developing skills as a programmer. Seeking for
+            opportunities that will allow me to expand my skill set in web
+            development.
+          </p>
+        </section>
+        <section class="main__div--section">
+          <h2 class="main__div--section-title">Experience</h2>
+          <div class="main__div--section-wrapper">
+            <section class="wrapper__project">
+              <h3 class="wrapper__project--title">Space Tourism</h3>
+              <p class="wrapper__project--description">
+                The latest project in my repository built for Frontend Mentor
+                challenge which I improved. This time I've learned ES6
+                destructuring, basics of Three.js, GSAP and to work with ES6
+                modules i used Parcel.
+              </p>
+            </section>
+            <section class="wrapper__project">
+              <h3 class="wrapper__project--title">Weather App</h3>
+              <p class="wrapper__project--description">
+                App built to complete a challenge from Devchallenges.io. Like in
+                previous project goal was to realize user stories that you can
+                find on my github. This time besides HTML, JS and Sass I have
+                learned and used Axios and NPM.
+              </p>
+            </section>
+            <section class="wrapper__project">
+              <h3 class="wrapper__project--title">Rest Countries API</h3>
+              <p class="wrapper__project--description">
+                Project is a solution for Frontend Mentor challenge. The goal
+                was to complete given user stories. It was made with HTML, Sass
+                and JS. In this project I have learned how to use Fetch Api and
+                work with REST API on frontend side as well as JSON data. What
+                is more i took my first steps into async functions.
+              </p>
+            </section>
+            <section class="wrapper__project">
+              <h3 class="wrapper__project--title">Blogr</h3>
+              <p class="wrapper__project--description">
+                It is a simple project built with HTML, basic JavaScript and
+                Sass. The goal was to build page looking as close to design as
+                possible. Website is fully responsive and optimised for multiple
+                browsers
+              </p>
+            </section>
+          </div>
+        </section>
+
+        <section class="main__div--section">
+          <div class="main__div--section-container">
+            <section class="main__div--section-container__skills">
+              <h2 class="skills__title">Skills</h2>
+              <ul class="skills__list">
+                <li class="skills__list--item">Html</li>
+                <li class="skills__list--item">CSS</li>
+                <li class="skills__list--item">SASS/SCSS</li>
+                <li class="skills__list--item">JavaScript</li>
+              </ul>
+            </section>
+            <section class="main__div--section-container__tools">
+              <h2 class="tools__title">Tools</h2>
+              <ul class="tools__list">
+                <li class="tools__list--item">Visual Studio Code</li>
+                <li class="tools__list--item">NPM</li>
+                <li class="tools__list--item">Parcel</li>
+                <li class="tools__list--item">Figma</li>
+                <li class="tools__list--item">Github</li>
+                <li class="tools__list--item">Git</li>
+              </ul>
+            </section>
+          </div>
+        </section>
+        <section class="main__div--section">
+          <h2 class="main__div--section-title">Certificates</h2>
+          <ul class="main__div--section-list">
+            <li class="main__div--section-list__item">
+              <span>Database Administration Fundamentals</span><br />
+              <a
+                href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+                >Verify a certificate -> wMh6m-HaMC</a
+              >
+            </li>
+            <li class="main__div--section-list__item">
+              <span>Software Development Fundamentals</span><br />
+              <a
+                href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+                >Verify a certificate -> wax93-HaL8</a
+              >
+            </li>
+            <li class="main__div--section-list__item">
+              <span>Security Fundamentals</span><br />
+              <a
+                href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+                >Verify a certificate -> 4krR-XLRR</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="main__div--section">
+          <h2 class="main__div--section-title">Interests</h2>
+          <ul id="interestsList" class="main__div--section-list">
+            <li class="main__div--section-list__item">
+              <span class="ico"
+                ><i class="fa-solid fa-spider" aria-hidden="true"></i
+              ></span>
+              <span class="text">Terraristics</span>
+            </li>
+            <li class="main__div--section-list__item">
+              <span class="ico"
+                ><i class="fa-solid fa-music" aria-hidden="true"></i
+              ></span>
+              <span class="text">Music</span>
+            </li>
+            <li class="main__div--section-list__item">
+              <span class="ico"
+                ><i class="fa-solid fa-car-side" aria-hidden="true"></i
+              ></span>
+              <span class="text">Cars</span>
+            </li>
+            <li class="main__div--section-list__item">
+              <span class="ico"
+                ><i class="fa-solid fa-gamepad" aria-hidden="true"></i
+              ></span>
+              <span class="text">Gaming</span>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <script type="module" src="../js/index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
